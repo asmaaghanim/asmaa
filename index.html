@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>الدكتورة أسماء غانم حسين - استشارية الطب النفسي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== متغيرات التصميم للهواتف ===== */
+        :root {
+            /* الألوان الرئيسية - سوداء وذهبية */
+            --primary-dark: #0a0a0f;
+            --primary-darker: #05050a;
+            --primary-light: #1a1a25;
+            
+            /* ألوان ذهبية احترافية */
+            --gold-primary: #FFD700;
+            --gold-secondary: #FFC300;
+            --gold-dark: #B8860B;
+            --gold-glow: rgba(255, 215, 0, 0.3);
+            
+            /* ألوان وسائل التواصل */
+            --instagram-color: #E1306C;
+            --tiktok-color: #000000;
+            --facebook-color: #1877F2;
+            
+            /* ألوان محايدة */
+            --neutral-darkest: #000000;
+            --neutral-darker: #0a0a0f;
+            --neutral-dark: #1a1a25;
+            --neutral-medium: #2a2a35;
+            --neutral-light: #d4d4e0;
+            --neutral-lighter: #f0f0ff;
+            
+            /* تأثيرات للهواتف */
+            --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.2);
+            --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --shadow-hard: 0 12px 36px rgba(0, 0, 0, 0.4);
+            --shadow-gold: 0 0 20px rgba(255, 215, 0, 0.3);
+            
+            --border-radius-sm: 10px;
+            --border-radius-md: 16px;
+            --border-radius-lg: 24px;
+            --border-radius-xl: 32px;
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* ===== إعادة تعيين للهواتف ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.6;
+            color: var(--neutral-lighter);
+            background-color: var(--neutral-darkest);
+            overflow-x: hidden;
+            min-height: 100vh;
+            touch-action: manipulation;
+        }
+        
+        /* تحسين النصوص للشاشات الصغيرة */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'El Messiri', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            letter-spacing: -0.3px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+            -webkit-touch-callout: none;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 0;
+        }
+        
+        button, input, textarea {
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        
+        /* ===== رأس متجاوب للهواتف ===== */
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            padding: 12px 0;
+            border-bottom: 2px solid var(--gold-primary);
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+            transition: var(--transition-smooth);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.2rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+        }
+        
+        .logo-text p {
+            font-size: 0.8rem;
+            color: var(--neutral-light);
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        /* ===== قائمة هاتف محسنة ===== */
+        .mobile-menu-btn {
+            display: block;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            font-size: 1.4rem;
+            color: var(--gold-primary);
+            cursor: pointer;
+            padding: 8px 12px;
+            transition: var(--transition-smooth);
+            z-index: 1001;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-menu-btn.active {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: var(--gold-primary);
+        }
+        
+        .nav-links {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 85%;
+            max-width: 300px;
+            height: calc(100vh - 70px);
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            flex-direction: column;
+            padding: 40px 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 999;
+            border-left: 2px solid var(--gold-primary);
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .nav-links.active {
+            right: 0;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 18px 20px;
+            font-weight: 700;
+            color: var(--neutral-lighter);
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+        
+        .nav-link:last-child {
+            border-bottom: none;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 4px;
+            height: 100%;
+            background: var(--gold-primary);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+        
+        .nav-link.active {
+            color: var(--gold-primary);
+            background: rgba(255, 215, 0, 0.05);
+            padding-right: 30px;
+        }
+        
+        .nav-link.active::before {
+            opacity: 1;
+        }
+        
+        .nav-link:hover {
+            color: var(--gold-primary);
+            transform: translateX(-10px);
+        }
+        
+        /* ===== قسم البطل للهواتف ===== */
+        .hero {
+            padding: 90px 0 60px;
+            background: linear-gradient(135deg, var(--neutral-darker) 0%, var(--primary-dark) 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: auto;
+        }
+        
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            order: 2;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-title {
+            font-size: 2.2rem;
+            color: var(--neutral-lighter);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+        
+        .doctor-subtitle {
+            font-size: 1.1rem;
+            color: var(--gold-primary);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .doctor-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+        
+        .doctor-title {
+            font-size: 1.2rem;
+            color: var(--gold-secondary);
+            margin-bottom: 2rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: var(--border-radius-md);
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .about-section {
+            background: rgba(26, 26, 37, 0.7);
+            padding: 25px 20px;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 2rem;
+            border-right: 3px solid var(--gold-primary);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            animation: slideInRight 0.8s ease-out 0.4s both;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .about-title {
+            color: var(--gold-primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .about-text {
+            color: var(--neutral-light);
+            line-height: 1.7;
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .hero-image {
+            order: 1;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        .image-frame {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-hard);
+            border: 6px solid rgba(255, 215, 0, 0.2);
+            position: relative;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            transition: var(--transition-smooth);
+        }
+        
+        .image-frame:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* ===== قسم العيادات للهواتف ===== */
+        .clinics-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-darker) 0%, var(--primary-dark) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: var(--gold-primary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            padding: 0 20px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+            border-radius: 2px;
+        }
+        
+        /* بطاقات العيادات للهواتف */
+        .clinics-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .clinic-card {
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 37, 0.9), 
+                rgba(10, 10, 15, 0.95));
+            border-radius: var(--border-radius-lg);
+            padding: 25px 20px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+            animation: clinicCardAppear 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes clinicCardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .clinic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                rgba(255, 215, 0, 0.05) 0%,
+                transparent 50%,
+                rgba(255, 215, 0, 0.05) 100%);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        
+        .clinic-card:active {
+            transform: scale(0.98);
+        }
+        
+        /* عيادة أربيل - الأولى */
+        .erbil-clinic {
+            animation-delay: 0.1s;
+            border-top: 3px solid var(--gold-primary);
+        }
+        
+        /* عيادة الموصل - الثانية */
+        .mosul-clinic {
+            animation-delay: 0.2s;
+            border-top: 3px solid var(--gold-secondary);
+        }
+        
+        /* عيادة إلكترونية - الثالثة */
+        .electronic-clinic {
+            animation-delay: 0.3s;
+            border-top: 3px solid #25D366;
+        }
+        
+        .clinic-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .clinic-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .clinic-title {
+            font-size: 1.5rem;
+            color: var(--gold-primary);
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        
+        .clinic-subtitle {
+            color: var(--gold-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        .clinic-details {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: var(--border-radius-md);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+        
+        .detail-item:active {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateX(-5px);
+        }
+        
+        .detail-icon {
+            color: var(--gold-primary);
+            font-size: 1.2rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 50%;
+            transition: var(--transition-smooth);
+        }
+        
+        /* أرقام الواتساب للهواتف */
+        .whatsapp-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 16px 20px;
+            border-radius: var(--border-radius-md);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: var(--transition-smooth);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        
+        .whatsapp-number:active {
+            transform: scale(0.95);
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-number i {
+            font-size: 1.3rem;
+            animation: whatsappPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes whatsappPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        /* ===== قسم التواصل الاجتماعي للهواتف ===== */
+        .social-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--neutral-darker) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-card {
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 37, 0.9), 
+                rgba(10, 10, 15, 0.95));
+            border-radius: var(--border-radius-lg);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition-smooth);
+            border-top: 3px solid;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
+            animation: socialCardAppear 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes socialCardAppear {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .social-card:active {
+            transform: scale(0.98);
+        }
+        
+        /* بطاقات وسائل التواصل */
+        .instagram-card {
+            animation-delay: 0.1s;
+            border-top-color: var(--instagram-color);
+        }
+        
+        .tiktok-card {
+            animation-delay: 0.2s;
+            border-top-color: var(--tiktok-color);
+        }
+        
+        .facebook-card {
+            animation-delay: 0.3s;
+            border-top-color: var(--facebook-color);
+        }
+        
+        .social-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                rgba(255, 255, 255, 0.05) 0%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.05) 100%);
+            z-index: 0;
+            opacity: 0.3;
+        }
+        
+        .social-icon-container {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            z-index: 2;
+        }
+        
+        .instagram-card .social-icon-container {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C);
+        }
+        
+        .tiktok-card .social-icon-container {
+            background: linear-gradient(135deg, #000000, #25F4EE, #FE2C55);
+        }
+        
+        .facebook-card .social-icon-container {
+            background: linear-gradient(135deg, #1877F2, #0D5EAD);
+        }
+        
+        .social-title {
+            font-size: 1.3rem;
+            color: var(--neutral-lighter);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            width: 100%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        
+        .social-link:active {
+            transform: scale(0.95);
+        }
+        
+        .instagram-card .social-link {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C);
+        }
+        
+        .tiktok-card .social-link {
+            background: linear-gradient(135deg, #000000, #25F4EE, #FE2C55);
+        }
+        
+        .facebook-card .social-link {
+            background: linear-gradient(135deg, #1877F2, #0D5EAD);
+        }
+        
+        /* ===== الفوتر للهواتف ===== */
+        footer {
+            background: linear-gradient(135deg, var(--neutral-darker), var(--primary-dark));
+            color: var(--neutral-light);
+            padding: 50px 0 30px;
+            border-top: 2px solid var(--gold-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold-primary);
+            box-shadow: var(--shadow-gold);
+        }
+        
+        .footer-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--gold-primary);
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-primary), transparent);
+            border-radius: 2px;
+        }
+        
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: var(--border-radius-md);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+        
+        .contact-list li:active {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateX(-5px);
+        }
+        
+        .contact-list i {
+            margin-top: 3px;
+            color: var(--gold-primary);
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            font-size: 0.9rem;
+            color: var(--neutral-light);
+            position: relative;
+            z-index: 1;
+            line-height: 1.6;
+        }
+        
+        /* ===== زر العودة للأعلى للهواتف ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            z-index: 998;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: bold;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:active {
+            transform: scale(0.9);
+        }
+        
+        /* ===== تحسينات للشاشات المتوسطة ===== */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .container {
+                padding: 0 24px;
+            }
+            
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.3rem;
+            }
+            
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .clinic-card {
+                padding: 30px 25px;
+            }
+            
+            .social-card {
+                padding: 35px 25px;
+            }
+            
+            .back-to-top {
+                left: 30px;
+                bottom: 30px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+        
+        /* ===== تحسينات للشاشات الكبيرة ===== */
+        @media (min-width: 1025px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+            
+            .nav-links {
+                position: static;
+                width: auto;
+                height: auto;
+                background: transparent;
+                backdrop-filter: none;
+                border-left: none;
+                box-shadow: none;
+                flex-direction: row;
+                padding: 0;
+                overflow: visible;
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem;
+                border-bottom: none;
+                font-size: 1.1rem;
+            }
+            
+            .nav-link::before {
+                display: none;
+            }
+            
+            .nav-link.active {
+                background: transparent;
+                padding-right: 1rem;
+                color: var(--gold-primary);
+            }
+            
+            .nav-link:hover {
+                transform: translateY(-3px);
+            }
+            
+            .hero-container {
+                flex-direction: row;
+                align-items: center;
+                gap: 60px;
+            }
+            
+            .hero-content {
+                order: 1;
+                flex: 1;
+            }
+            
+            .hero-image {
+                order: 2;
+                flex: 1;
+            }
+            
+            .hero-title,
+            .doctor-subtitle,
+            .doctor-title,
+            .about-title,
+            .about-text {
+                text-align: right;
+            }
+            
+            .social-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .footer-section {
+                flex: 1;
+            }
+        }
+        
+        /* ===== تحسينات للشاشات الصغيرة جداً ===== */
+        @media (max-width: 360px) {
+            html {
+                font-size: 14px;
+            }
+            
+            .container {
+                padding: 0 12px;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .clinic-title {
+                font-size: 1.3rem;
+            }
+            
+            .whatsapp-number {
+                padding: 14px 16px;
+                font-size: 1rem;
+            }
+            
+            .social-icon-container {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+            
+            .social-link {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .back-to-top {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+                left: 15px;
+                bottom: 15px;
+            }
+        }
+        
+        /* ===== تحسينات الأداء واللمس ===== */
+        @media (hover: none) and (pointer: coarse) {
+            .clinic-card:hover,
+            .social-card:hover,
+            .detail-item:hover,
+            .contact-list li:hover {
+                transform: none;
+            }
+            
+            .whatsapp-number:hover,
+            .social-link:hover,
+            .back-to-top:hover {
+                transform: none;
+            }
+            
+            /* تحسين تجربة اللمس */
+            .clinic-card,
+            .social-card,
+            .whatsapp-number,
+            .social-link {
+                cursor: pointer;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+        }
+        
+        /* ===== تحسينات للتوجيه الأفقي ===== */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                padding: 80px 0 40px;
+                min-height: auto;
+            }
+            
+            .nav-links {
+                height: calc(100vh - 70px);
+                overflow-y: auto;
+            }
+            
+            .clinic-card,
+            .social-card {
+                padding: 20px;
+            }
+            
+            .clinic-header {
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+            
+            .detail-item {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* ===== منع التكبير في حقول الإدخال ===== */
+        @media screen and (max-width: 767px) {
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                font-size: 16px !important;
+            }
+        }
+        
+        /* ===== تحسينات الوصول ===== */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- الرأس -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="dr.jpg" alt="الدكتورة أسماء غانم حسين" class="logo-img" loading="lazy">
+                <div class="logo-text">
+                    <h1>د. أسماء غانم حسين</h1>
+                    <p>استشارية الطب النفسي</p>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="قائمة التنقل">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav aria-label="التنقل الرئيسي">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#clinics" class="nav-link">العيادات</a></li>
+                    <li><a href="#social" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">الدكتورة أسماء غانم حسين</h1>
+                <h2 class="doctor-subtitle">أستاذ مساعد في الطب النفسي</h2>
+                <h3 class="doctor-title">استشارية الطب النفسي</h3>
+                
+                <div class="about-section">
+                    <h4 class="about-title">نبذة:</h4>
+                    <p class="about-text">
+                        أخصائية طب نفسي معتمدة، حاصلة على البورد العربي والعراقي في الطب النفسي. أستاذ مساعد في الطب النفسي، متخصصة في التشخيص الدقيق والعلاج المتكامل للاضطرابات النفسية.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="dr.jpg" alt="الدكتورة أسماء غانم حسين" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم العيادات -->
+    <section class="clinics-section" id="clinics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عيادات الدكتورة</h2>
+            </div>
+            
+            <div class="clinics-grid">
+                <!-- عيادة أربيل - الأولى -->
+                <div class="clinic-card erbil-clinic">
+                    <div class="clinic-header">
+                        <div class="clinic-icon">
+                            <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="clinic-title">عيادة أربيل</h3>
+                            <p class="clinic-subtitle">مجمع نوما الطبي</p>
+                        </div>
+                    </div>
+                    
+                    <div class="clinic-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt detail-icon" aria-hidden="true"></i>
+                            <div>
+                                <p><strong>الموقع:</strong></p>
+                                <p>مجمع نوما الطبي</p>
+                                <p>شارع الثلاثيني مقابل باب البرلمان</p>
+                                <p>قرب القنصلية الفرنسية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fab fa-whatsapp detail-icon" aria-hidden="true"></i>
+                            <div>
+                                <p><strong>رقم الواتساب:</strong></p>
+                                <button onclick="window.location.href='tel:07515192222'" class="whatsapp-number" aria-label="الاتصال على رقم واتساب عيادة أربيل">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> 07515192222
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- عيادة الموصل - الثانية -->
+                <div class="clinic-card mosul-clinic">
+                    <div class="clinic-header">
+                        <div class="clinic-icon">
+                            <i class="fas fa-hospital" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="clinic-title">عيادة الموصل</h3>
+                            <p class="clinic-subtitle">مجمع اربد الطبي</p>
+                        </div>
+                    </div>
+                    
+                    <div class="clinic-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt detail-icon" aria-hidden="true"></i>
+                            <div>
+                                <p><strong>الموقع:</strong></p>
+                                <p>مجمع اربد الطبي</p>
+                                <p>المثنى قرب اعدادية الرسالة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fab fa-whatsapp detail-icon" aria-hidden="true"></i>
+                            <div>
+                                <p><strong>رقم الواتساب:</strong></p>
+                                <button onclick="window.location.href='tel:07706671853'" class="whatsapp-number" aria-label="الاتصال على رقم واتساب عيادة الموصل">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> 07706671853
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العيادة الإلكترونية - الثالثة -->
+                <div class="clinic-card electronic-clinic">
+                    <div class="clinic-header">
+                        <div class="clinic-icon">
+                            <i class="fas fa-laptop-medical" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="clinic-title">العيادة الإلكترونية</h3>
+                            <p class="clinic-subtitle">الاستشارات عن بعد</p>
+                        </div>
+                    </div>
+                    
+                    <div class="clinic-details">
+                        <div class="detail-item">
+                            <i class="fab fa-whatsapp detail-icon" aria-hidden="true"></i>
+                            <div>
+                                <p><strong>واتساب العيادة الإلكترونية:</strong></p>
+                                <button onclick="window.location.href='tel:07724596530'" class="whatsapp-number" aria-label="الاتصال على رقم واتساب العيادة الإلكترونية">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> 07724596530
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم التواصل الاجتماعي -->
+    <section class="social-section" id="social">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل معنا</h2>
+            </div>
+            
+            <div class="social-grid">
+                <!-- انستغرام -->
+                <div class="social-card instagram-card">
+                    <div class="social-icon-container" aria-hidden="true">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="social-title">انستغرام</h3>
+                    <a href="https://www.instagram.com/dr.asmaaghanim?igsh=ZTRqemRuaG5oaTdx" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> تابع على انستغرام
+                    </a>
+                </div>
+                
+                <!-- تيك توك -->
+                <div class="social-card tiktok-card">
+                    <div class="social-icon-container" aria-hidden="true">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3 class="social-title">تيك توك</h3>
+                    <a href="https://www.tiktok.com/@dr.asmaaghanim?_t=8goNTc1bWq6&_r=1" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-tiktok" aria-hidden="true"></i> تابع على تيك توك
+                    </a>
+                </div>
+                
+                <!-- فيسبوك -->
+                <div class="social-card facebook-card">
+                    <div class="social-icon-container" aria-hidden="true">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 class="social-title">فيسبوك</h3>
+                    <a href="https://www.facebook.com/DrasmaaGhanim" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i> تابع على فيسبوك
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="dr.jpg" alt="الدكتورة أسماء غانم حسين" class="footer-logo-img" loading="lazy">
+                        <div>
+                            <h3>الدكتورة أسماء غانم حسين</h3>
+                            <p>استشارية الطب النفسي</p>
+                        </div>
+                    </div>
+                    <p style="line-height: 1.7;">
+                        أستاذ مساعد في الطب النفسي - حاصلة على البورد العربي والعراقي في الطب النفسي. متخصصة في التشخيص الدقيق والعلاج المتكامل للاضطرابات النفسية.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>الخدمات المقدمة</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> استشارات نفسية متخصصة</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> علاج الاضطرابات النفسية</li>
+                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> تشخيص دقيق للاضطرابات</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span> | الدكتورة أسماء غانم حسين - استشارية الطب النفسي</p>
+                <p style="margin-top: 10px; opacity: 0.7;"></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر العودة للأعلى -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    
+    <script>
+        // تعريف المتغيرات
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const backToTopBtn = document.getElementById('backToTop');
+        const navLinksItems = document.querySelectorAll('.nav-link');
+        const currentYear = document.getElementById('currentYear');
+        
+        // القائمة المتنقلة للهواتف
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            this.classList.toggle('active');
+            this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+        
+        // إغلاق القائمة عند النقر على رابط
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                
+                // تحديث الرابط النشط
+                navLinksItems.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+        
+        // منع تمرير الصفحة عند فتح القائمة (للأجهزة المحمولة)
+        function preventBodyScroll(prevent) {
+            if (window.innerWidth <= 768) {
+                document.body.style.overflow = prevent ? 'hidden' : '';
+                document.body.style.position = prevent ? 'fixed' : '';
+                document.body.style.width = prevent ? '100%' : '';
+            }
+        }
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            preventBodyScroll(navLinks.classList.contains('active'));
+        });
+        
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', () => {
+                preventBodyScroll(false);
+            });
+        });
+        
+        // زر العودة للأعلى
+        function checkScroll() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+            
+            // تحديث الرابط النشط حسب التمرير
+            updateActiveNavLink();
+        }
+        
+        // استخدام throttling لتحسين الأداء
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            if (!scrollTimeout) {
+                scrollTimeout = setTimeout(() => {
+                    checkScroll();
+                    scrollTimeout = null;
+                }, 100);
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            backToTopBtn.classList.remove('visible');
+        });
+        
+        // تحديث الرابط النشط حسب القسم
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinksItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // تعيين السنة الحالية
+        currentYear.textContent = new Date().getFullYear();
+        
+        // تحسين تجربة اللمس للأزرار
+        document.querySelectorAll('.whatsapp-number, .social-link').forEach(button => {
+            button.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            }, { passive: true });
+            
+            button.addEventListener('touchend', function() {
+                this.style.transform = '';
+            }, { passive: true });
+            
+            button.addEventListener('touchcancel', function() {
+                this.style.transform = '';
+            }, { passive: true });
+            
+            // للنقر العادي (للمكتبي)
+            button.addEventListener('mousedown', function() {
+                if (window.innerWidth > 768) {
+                    this.style.transform = 'scale(0.95)';
+                }
+            });
+            
+            button.addEventListener('mouseup', function() {
+                this.style.transform = '';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+            });
+        });
+        
+        // تحسين اتصال الهاتف للأجهزة المحمولة
+        document.querySelectorAll('.whatsapp-number').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    const phoneNumber = this.textContent.trim().replace(/\D/g, '');
+                    if (phoneNumber) {
+                        // استخدام طريقة مباشرة للاتصال
+                        window.location.href = `tel:${phoneNumber}`;
+                        e.preventDefault();
+                        return false;
+                    }
+                }
+            });
+        });
+        
+        // تهيئة الموقع
+        document.addEventListener('DOMContentLoaded', () => {
+            updateActiveNavLink();
+            
+            // تحسين تحميل الصور
+            const logoImages = document.querySelectorAll('img[src="dr.jpg"]');
+            logoImages.forEach(img => {
+                img.onerror = function() {
+                    // استخدام صورة بديلة خفيفة الوزن للهواتف
+                    this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMGEwYTAwIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSI0MCIgZmlsbD0iIzFFNDBBRiIvPgo8cGF0aCBkPSJNNzAgMTUwTDEwMCAxODBMMTMwIDE1MCIgc3Ryb2tlPSIjRkZDQzAwIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=';
+                    this.alt = 'صورة الدكتورة أسماء غانم حسين - استشارية الطب النفسي';
+                };
+            });
+            
+            // تحسينات للأداء
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // تقليل الرسوم المتحركة على الأجهزة المحمولة
+                document.documentElement.style.setProperty('--transition-smooth', 'all 0.2s ease');
+                
+                // تعطيل بعض الرسوم المتحركة المعقدة
+                const complexAnimations = document.querySelectorAll('.hero-image, .clinic-icon, .social-icon-container');
+                complexAnimations.forEach(el => {
+                    el.style.animation = 'none';
+                });
+            }
+            
+            // تحميل متأخر للعناصر غير الأساسية
+            setTimeout(() => {
+                const lazyElements = document.querySelectorAll('.detail-item, .social-card');
+                lazyElements.forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                });
+            }, 300);
+            
+            // تحسينات للوضع الأفقي
+            window.addEventListener('orientationchange', function() {
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                    preventBodyScroll(false);
+                }, 300);
+            });
+            
+            // منع التكبير المزدوج على الهواتف
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                const now = Date.now();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+        });
+        
+        // دعم الوضع الداكن في النظام
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.style.setProperty('--neutral-lighter', '#f0f0ff');
+            document.documentElement.style.setProperty('--neutral-light', '#d4d4e0');
+        }
+    </script>
+</body>
+</html>
